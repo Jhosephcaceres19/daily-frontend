@@ -1,16 +1,9 @@
 ---
-import { SignupForm } from "./SignupForm";
+import { SignupForm } from "./SignupForm"
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Iniciar sesion</h1>
-	<SignupForm client:load/>
-</body>
-</html>
+<section class="p-6 ">
+	<div class="container grid gap-6 mx-auto text-center items-center min-h-full lg:grid-cols-2 xl:grid-cols-5">
+		<SignupForm/>
+		<img src="https://www.datocms-assets.com/17507/1614782542-scrum-process-schema-en-small.png" alt="" class="object-cover w-full rounded-md xl:col-span-3 ">
+	</div>
+</section>
