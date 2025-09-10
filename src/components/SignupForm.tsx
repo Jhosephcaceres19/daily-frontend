@@ -20,10 +20,12 @@ export const SignupForm = () => {
           setSubmitting(false);
         }, 400);
       }}
+      validateOnChange={true}
+      validateOnBlur={true}
     >
       <div className="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2">
         <h1 className="text-5xl font-extrabold">Registro daily</h1>
-
+        <p></p>
         <Form className=" self-stretch space-y-3 bg-sky-300 p-3 rounded-2xl">
           <div>
             <label htmlFor="userName" className="text-sm sr-only">
@@ -35,7 +37,11 @@ export const SignupForm = () => {
               placeholder="Username"
               className="w-full rounded-md focus:ring bg-white p-2"
             />
-            <ErrorMessage name="userName" className="text-red-500" />
+            <ErrorMessage
+              name="userName"
+              component="div"
+              className="text-red-500"
+            />
           </div>
 
           <div>
@@ -48,7 +54,11 @@ export const SignupForm = () => {
               placeholder="password"
               className="w-full rounded-md focus:ring bg-white p-2"
             />
-            <ErrorMessage name="password" className="text-red-500" />
+            <ErrorMessage
+              name="password"
+              component="div"
+              className="text-red-500"
+            />
           </div>
 
           <button
