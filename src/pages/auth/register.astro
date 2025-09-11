@@ -1,0 +1,20 @@
+---
+import { SignupForm } from "../../components/SignupForm"; 
+---
+<section class="p-6 min-h-screen flex items-center justify-center bg-sky-400">
+  <div class="container grid gap-8 mx-auto items-center lg:grid-cols-2 xl:grid-cols-5">
+    <!-- Formulario -->
+    <div class="flex justify-center xl:col-span-2">
+      <SignupForm client:load />
+    </div>
+
+    <!-- Imagen -->
+    <div class="flex justify-center xl:col-span-3 bg-amber-50 rounded-3xl">
+      <img 
+        src="https://www.datocms-assets.com/17507/1614782542-scrum-process-schema-en-small.png" 
+        alt="Scrum Schema" 
+        class="w-full h-auto max-w-4xl rounded-md object-contain" 
+      />
+    </div>
+  </div>
+</section>
